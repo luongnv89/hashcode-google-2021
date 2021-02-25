@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { quickSort } = require('./algorithms/quickSort');
-
+const sort = require('fast-sort');
 const { printOutput, processInputFile } = require('./utils');
 
 class Pizza {
@@ -192,6 +192,7 @@ const endProcessFct = () => {
   console.log(pizzas);
   console.log(teams);
   // quickSort(allLibraries, false, "signupTime");
+  sort(pizzas).desc('nbIngredients');
   resolveTheProblemSequentlyAddedPizza();
   console.log(pizzas);
   console.log(teams);
