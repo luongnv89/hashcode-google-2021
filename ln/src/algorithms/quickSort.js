@@ -1,5 +1,10 @@
 const { compare, swap } = require('./utils');
-
+/**
+ * Quick sort
+ * @param {Array} data Array of data
+ * @param {Boolean} desc true - desc, false - inscrease
+ * @param {Strign||null} sortKey sorted attribute
+ */
 const quickSort = (array, desc, sortKey) => {
   return _quick(array, desc, 0, array.length - 1, sortKey);
 };

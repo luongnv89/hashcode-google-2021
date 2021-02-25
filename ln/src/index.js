@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { quickSort } = require('./algorithms/quickSort');
+const sort = require('fast-sort');
 
 const { printOutput, processInputFile } = require('./utils');
 // GLOBAL VARIABLES
